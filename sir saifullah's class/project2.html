@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        form{
+            padding: 5px;
+        }
+        input[type = "text"], [type = "password"]{
+            width: 60%;
+            margin-left: 12px;
+            margin-bottom: 20px;
+        }
+        input[type = "checkbox"], [type = "radio"]{
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Novell Services Login</h2>
+
+    <form action="">
+        <label for="username">Username:</label>
+        <input type="text" name="" id="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="" id="password"> 
+        <br>
+        <label for="city">City of Employment:</label>
+        <input type="text" name="" id="city">
+        <br>
+        <label for="server">Web server:</label>
+        <select name="" id="server">
+            <option value="" selected>--- Choose a server ---</option>
+            <option value="">HTTPS</option>
+        </select>
+        <br> <br>
+       <div class="prof">
+        <label for="role">Please Specify your role:</label>
+        <div class="main">
+        <input type="radio" name="role" id="radio"> Admin
+        <input type="radio" name="role" id="radio"> Engineer
+        <input type="radio" name="role" id="radio"> Manager
+        <input type="radio" name="role" id="radio"> Guest
+        </div>
+       </div>
+        <br>
+        <label for="sign">Single Sign-on to the following:</label>
+        <input type="checkbox" name="sign" id="sign"> Mad
+        <input type="checkbox" name="sign" id="sign"> playroll
+        <input type="checkbox" name="sign" id="sign"> Self-service
+        <br>
+        <input type="button" value="Login">
+        <input type="button" value="Reset">
+    </form>
+</body>
+</html>
